@@ -72,9 +72,9 @@ h1 {
     /* margin: 64px 10px 16px 20px; */
 }
 
-h1 + p {
+/* h1 + p {
     margin-bottom: 64px;
-}
+} */
 
 hr {
     margin: 64px, 0;
@@ -116,12 +116,26 @@ blockquote span::before {
     content: '-';
 }
 
+.form {
+    font-size: 0;
+}
+
 input {
     padding: 10px 20px;
-    margin: 20px;
-    display: block;
+    /* margin: 20px; */
+    /* display: block; */
     width: 500px;
+    box-sizing: border-box;
 }
+
+/* .debug {
+    box-shadow: 0 0 0 2px red;
+    /* outline: 1px solid red; */
+    /* background: red;
+    /*border: 1px solid red !important; */
+    /*box-sizing: border-box;
+ }
+*/
 
 .hero {
     background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2), transparent), url('../images/pattern.png');
