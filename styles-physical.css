@@ -45,10 +45,26 @@ a {
 }
 
 header {
-    /*Esta variable puede ser modificada solo en caso de ser necesario*/
+    /*
+    * Esta variable puede ser modificada solo en caso de ser necesario
+    *
+    * This variable can be modified just when needed.
+    */
+     
     /* --gray10: red; */
     font-size: 14px;
     color: var(--gray10);
+    position: fixed;
+    border: 1px solid red;
+    /* top left bottom right z index;*/
+    /*top: 200px;*/
+    /* right: 50px;
+    bottom: 100px;*/
+    background: red;
+    z-index: 1;
+    /*position: absolute;
+    position: fixed;
+    position: sticky; */
 }
 
 header a {
