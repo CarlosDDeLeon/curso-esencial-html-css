@@ -33,6 +33,10 @@
     --gray10: #616161;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: var(--gray30);
     font-family: 'Roboto', sans-serif; 
@@ -50,21 +54,13 @@ header {
     *
     * This variable can be modified just when needed.
     */
-    /* --gray10: red; */
     font-size: 14px;
+    width: 188px;
     color: var(--gray10);
-    border: 1px solid red;
-    /* top left bottom right z index;*/
-    /*top: 200px;*/
-    /* right: 50px;*/    
-    left: 0;
-    top: 0;
-    /*bottom: 100px;*/
-    background: red;
+    position: absolute;    
+    left: -232px;
+    top: 64px;
     z-index: 1;
-    position: absolute;
-    /*position: fixed;*/
-    /* position: sticky; */
 }
 
 header a {
@@ -75,12 +71,18 @@ header a {
 header a:hover {
     color: var(--gray30);
 }
+
 nav details summary {
     font-weight: bold;
 }
 
+header li {
+    margin-bottom: 16px;
+}
+
 h1 {
     font-size: 60px;
+    font-weight: normal;
     /*text-decoration: underline;*/
     /*font-size: 3.75em;*/
     margin-top: 64px;
@@ -156,8 +158,15 @@ input {
    /* width: 500px;
     box-sizing: border-box;
 }*/
+.header {
+    position: sticky;
+    top: 0;
+}
+.header-content {
+    position: relative;
+}
 
-main {
+.main {
     /* border: 1px solid red;
     width: 902px;
     margin: auto; */    
@@ -170,7 +179,7 @@ main {
 
 .main-content {
     /*background: blue; */
-    padding: 20px;
+    /* padding: 20px; */
     background: white;
 }
 
