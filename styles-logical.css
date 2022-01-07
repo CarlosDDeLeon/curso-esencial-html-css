@@ -1,0 +1,112 @@
+@font-face {
+    font-family: charter;
+    src: url('../fonts/charter-regular.otf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: charly;
+    src: url('../fonts/charter-italic.otf');
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: charly;
+    src: url('../fonts/charter-bold.otf');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: charly;
+    src: url('../fonts/charter-bold-italic.otf');
+    font-style: italic;
+    font-weight: bold;
+}
+
+:root {
+    font-size: 18px;
+    --white30: white;
+    --white20: #a5a3a5;
+    --white10: #616161;
+}
+
+body {
+    color: var(--white30);
+    font-family: 'Roboto', sans-serif;
+    background: #251f24; 
+    /* font-family: charly;   */
+}
+
+a {
+    color: var(--white30);
+}
+
+header {
+    /*Esta variable puede ser modificada solo en caso de ser necesario*/
+    /* --white10: red; */
+    font-size: 14px;
+    color: var(--white10);
+}
+
+header a {
+    color: var(--white20);
+    text-decoration: none;
+}
+
+header a:hover {
+    color: var(--white30);
+}
+nav details summary {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+pre {
+    background: #fec62e;
+}
+
+p {
+    color: var(--white20); 
+}
+
+.hero {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2), transparent), url('../images/pattern.png');
+    height: 350px;
+}
+
+.section-content {
+    counter-reset: titleList;
+}
+.section-content h3 {
+    counter-increment: titleList;
+}
+
+.section-content h3::before {
+    content: counter(titleList, decimal);
+}
+
+.section-content h3::after {
+    content: '';
+    width: 32px;
+    height: 4px;
+    background: var(--white30);
+    display: block;
+}
+
+/* ::selection {
+    background: greenyellow;
+} */
