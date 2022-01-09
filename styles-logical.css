@@ -105,11 +105,14 @@ p {
 .section-content img {
     margin-block-start: 40px;
     display: block;
+    max-inline-size: 100%;
+    /*max-width: 100%;*/
 }
 
 .section-content {
     counter-reset: titleList;
 }
+
 .section-content h3 {
     counter-increment: titleList;
 }
@@ -136,6 +139,22 @@ blockquote {
 .main hr {
     display: none;
 }
+
+.main {
+
+}
+
+.wrapper {
+    max-inline-size: 902px;
+   /* block-size: 100px;*/
+   /*max-width: 902px;*/
+    margin: auto;
+}
+
+.main-content {
+    
+}
+
 /* ::selection {
     background: greenyellow;
 } */
