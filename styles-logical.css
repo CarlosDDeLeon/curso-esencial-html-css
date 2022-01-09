@@ -6,21 +6,21 @@
 }
 
 @font-face {
-    font-family: charly;
+    font-family: charter;
     src: url('../fonts/charter-italic.otf');
     font-style: italic;
     font-weight: 400;
 }
 
 @font-face {
-    font-family: charly;
+    font-family: charter;
     src: url('../fonts/charter-bold.otf');
     font-style: normal;
     font-weight: bold;
 }
 
 @font-face {
-    font-family: charly;
+    font-family: charter;
     src: url('../fonts/charter-bold-italic.otf');
     font-style: italic;
     font-weight: bold;
@@ -46,11 +46,36 @@ a {
     color: var(--white30);
 }
 
+.header {
+    position: sticky;
+    inset-block-start: -45px;
+}
+
+.header-content {
+    position: relative;
+    inset-block-start: 65px;
+}
+
 header {
     /*Esta variable puede ser modificada solo en caso de ser necesario*/
     /* --white10: red; */
     font-size: 14px;
-    color: var(--white10);
+    color: var(--white);
+    position: absolute;
+    /* TOP */
+    inset-block-start: 0;
+    /* BOTTOM */
+    /* inset-block-end: ; */
+    /* LEFT */
+    inset-inline-start: -208px;
+    /* RIGHT */
+    /* inset-inline-end: ; */
+    inline-size: 188px;
+}
+
+header li {
+    color: var(--white20);
+    margin-block-end: 16px;
 }
 
 header a {
@@ -65,16 +90,16 @@ nav details summary {
     font-weight: bold;
 }
 
-h1 {
+h1 { 
     font-size: 60px;
     margin-block-start: 64px;
     margin-block-end: 16px;
-    font-weight: normal;
+    /* font-weight: normal; */
 }
 
 h2 {
     font-size: 2em;
-    font-weight: normal;
+    margin-block: 40px;
 
 }
 
@@ -88,6 +113,8 @@ hr {
     margin-block: 40px;
     border-color: rgba(97, 97, 97, 0.2);
 }
+
+/*Revisado hasta aqui*/
 
 pre {
     background: var(--white10);
@@ -161,9 +188,9 @@ blockquote {
     display: none;
 }
 
-.main {
-    /* padding: 10px; */
-}
+/* .main {
+     padding: 10px;
+} */
 
 .wrapper {
     max-inline-size: 902px;
