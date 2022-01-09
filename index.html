@@ -132,7 +132,7 @@
                 <p>El Document Object Model es una estructura de árbol que representará todos nuestros proyectos web como si un árbol genealógico 
                     fuera: padres, hijos, hermanos con niveles infinitos. cuando entendemos esta anidación podemos identificar dependencias, 
                     herencias en css y que tan complejo es nuestro proyecto.</p>
-                    <img src="images/dom.png" alt="Estructura de árbol que representa al Document Object Model">
+                    <img src="./images/dom.png" alt="Estructura de árbol que representa al Document Object Model">
                 <h3 id="semanticas">Semánticas</h3>
                 <p>La semántica le brinda sentido a cada elemento existen en un sitio web, algunos elementos será meramente decorativos y no deben 
                     significar nada pero otros serán títulos y deberán estar en diferente jerarquías o alguna secciones serán más relevantes que otras,
@@ -150,16 +150,16 @@
                 <img src="images/css.png" alt="Logo de CSS" title="CSS3">
             </section>
             <section class="section-content">
-                <h3>Modelo de caja</h3>
+                <h2>Modelo de caja</h2>
                 <h3>El modelo de caja está compuesto por:</h3>
                 <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y herramientas de desarrollo 
                     avanzadas y de amigable uso.</p>
-                <ul>
+                <ol>
                     <li>Tamaño del contenido / ancho y alto</li>
                     <li>Padding / Relleno</li>
                     <li>Border / Bordes</li>
                     <li>Margin / Fuentes</li>
-                </ul>
+                </ol>
                 <h3>Propiedades físicas para el modelo de caja:</h3>
                 <ol>
                     <li>width / height</li>
@@ -168,10 +168,39 @@
                     <li>padding / padding-top | padding-right | padding-bottom | padding-left</li>
                 </ol>
             </section>
+            <div class="section-content">
+                <h2>Hola estos son algunos videos muy lindos</h2>
+                <div class="slider">
+                    <scroll-container class="slider-container">
+                        <scroll-page class="slider-slide" id="video-1">
+                            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/JjQstU8nKFk" 
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </scroll-page>
+                         <scroll-page class="slider-slide" id="video-2">
+                            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/JjQstU8nKFk" 
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </scroll-page>
+                        <scroll-page class="slider-slide" id="video-3">
+                            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/JjQstU8nKFk" 
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </scroll-page>
+                    </scroll-container>
+                    <div class="slider-bullet-list">
+                        <a href="#video-1" class="slider-bullet"></a>
+                        <a href="#video-2" class="slider-bullet"></a>
+                        <a href="#video-3" class="slider-bullet"></a>
+                    </div>
+                </div>
+            </div>
             <p>
                 Si tienes alguna pregunta escríbeme a 
                 <a href="mailto:me@carlosdeleon.com">me@carlosdeleon.com</a>
             </p>
-</main>
-</body>
+            </div>
+        </div>
+    </main>
+  </body>
 </html>
