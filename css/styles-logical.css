@@ -1,29 +1,31 @@
-@font-face {
+/* Logical Stylesheet*/
+
+@font-face{/* Customize font family */
     font-family: charter;
     src: url('../fonts/charter-regular.otf');
     font-style: normal;
     font-weight: 400;
 }
 
-@font-face {
+@font-face{/* Customize font family */
     font-family: charter;
     src: url('../fonts/charter-italic.otf');
     font-style: italic;
     font-weight: 400;
 }
 
-@font-face {
+@font-face{/* Customize font family */
     font-family: charter;
     src: url('../fonts/charter-bold.otf');
-    font-style: normal;
-    font-weight: bold;
+    font-style: bold;
+    font-weight: 400;
 }
 
-@font-face {
+@font-face{/* Customize font family */
     font-family: charter;
-    src: url('../fonts/charter-bold-italic.otf');
+    src: url('../fonts/charter-bold-italic.otf.otf');
     font-style: italic;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 :root {
@@ -33,142 +35,141 @@
     --white10: #3a3539;
 }
 
-body {
-    color: var(--white30);
-    font-family: 'nunito', sans-serif;
-    background: #251f24; 
-    margin: 0;
-    /* margin-block-end: 50px; */
-    /* font-family: charly;   */
-}
+/* *{
 
-a {
-    color: var(--white30);
-}
-
-/* .header {
-    position: sticky;
-    inset-block-start: -45px;
 } */
 
- .header-content { 
-    padding-inline: 20px;
-    } 
+/* html{
+     scroll-behavior: smooth; 
+}*/
 
-header {
-    /*Esta variable puede ser modificada solo en caso de ser necesario*/
-    /* --white10: red; */
-    margin-block-start: 20px;
-    font-size: 14px;
-    color: var(--white);
-    /*position: absolute;
-    /* TOP */
-    /* inset-block-start: 0; */
-    /* BOTTOM */
-    /* inset-block-end: ; */
-    /* LEFT */
-    /* inset-inline-start: -208px; */
-    /* RIGHT */
-    /* inset-inline-end: ; */
-    /* inline-size: 188px; */
+body{
+    color: var(--white30);
+    /* font-family: charter; */
+    font-family: 'Nunito', sans-serif;
+    background-color: #251F24;
+    margin: 0;
 }
 
-header li {
+a{
+    color: var(--white30);
+}
+
+/* Font size */
+html{
+    font-size: 62.5%;
+}
+
+/* Header properties........ */
+.header-content{
+    display: block;
+    margin-inline-start: calc(100%-10px);
+    margin-block-start: 60px;
+}
+header{
+    font-size: 16px;
+    color: var(--white)
+}
+nav details summary{
+    color: var(--white30);
+    font-weight: bold;
+}
+
+header li{
     color: var(--white20);
     margin-block-end: 16px;
 }
 
-header a {
+header a{
     color: var(--white20);
     text-decoration: none;
 }
 
-header a:hover {
+header a:hover{
     color: var(--white30);
 }
-nav details summary {
-    font-weight: bold;
+
+h1{
+    font-size: 4rem;
+    font-weight: normal;
+    margin-block: 64px 16px;
 }
 
-h1 { 
-    font-size: 40px; 
-    margin-block-start: 20px;
-    margin-block-end: 16px;
-    /* font-weight: normal; */
-}
-
-h2 {
-    font-size: 2em;
+h2{
+    font-size: 4rem;
+    font-weight: normal;
     margin-block: 40px;
-} 
 
-h3 {
-    font-size: 1.5em;
+}
+
+h3{
     font-weight: 600;
+    font-size: 3.2rem;
     margin-block: 16px;
 }
 
-hr {
+hr{
     margin-block: 40px;
-    border-color: rgba(97, 97, 97, 0.2);
+    border-color: rgb(97, 97, 97, 0.2);
 }
 
-/*Revisado hasta aqui*/
+p{
+    font-size: 1.6rem;
+    color: var(--white20);
+}
 
-pre {
+pre{
     background: var(--white10);
-    padding: 40px;
+    padding: 2rem 0;
+    font-size: 12px;
     overflow: auto;
     border-radius: 8px;
-    border: 10px solid red;
-    border-left: 5px solid blue;
-    border-inline-start: 5px solid white;
-    border-block-end: 20px solid pink;
-    border-inline-end: 5px solid green;
-    border-block-start-color: blue;
-    border: 10px solid #5551ff;
-    box-shadow: -10px 10px 0 0 #abaaf6;
-    /* border-block-end: 30px;    
-    border-radius: 50px; */
+    border-inline: 5px solid #5551FF;
+    border-block: 5px solid #5551FF;
+    box-shadow: -10px 10px  0 0 #ABAAF6;
+    margin-block-end: 30px;
+    border-start-start-radius: 50px;
 }
 
-p {
-    color: var(--white20); 
+.hero{
+    block-size: 350px;
+    background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
 }
 
-.hero {
-    background-image: linear-gradient(96.07deg, #314755 30.63%, #26a0da 102.18%);
-    block-size: 50px;
-}
-
-.section-content img {
-    margin-block-start: 40px;
-    display: block;
-    max-inline-size: 100%;
-    /*max-width: 100%;*/
-}
-
-.section-content {
+.section-content{
     counter-reset: titleList;
 }
 
-.section-content h3 {
+.section-content img{
+    margin-block-start: 40px;
+    display: block;
+    max-inline-size: 100%;
+}
+
+.section-content h3{
     counter-increment: titleList;
 }
 
-.section-content h3::before {
-    content: counter(titleList, decimal)'. ';
+.section-content h3::before{
+    content: counter(titleList, decimal) "."; 
+
 }
 
-/*.section-content h3::after {
-    content: '';
-    width: 32px;
+.section-content h3::after{
+    content: ''; 
+    width: 50px;
     height: 4px;
-    background: var(--white30);
-    display: inline-block;
-}*/
+    display: block;
+    background-color: white;
+    display: block;
+}
 
-blockquote {
+::selection{
+    background-color: antiquewhite; /* Cambia el color cuando seleccionamos el texto en el sitio web */
+}
+
+
+blockquote{
     margin-block-start: 80px;
     margin-block-end: 63px;
     background-color: var(--white10);
@@ -179,114 +180,131 @@ blockquote {
     padding-inline-start: 24px;
     padding-block-start: 24px;
     padding-block-end: 24px;
-    }
+}
 
-    blockquote p {
-        color: var(--white30);
-    }
+blockquote p{
+    color: var(--white30);
+}
 
-.main hr {
+.main hr{
     display: none;
 }
 
-/* .main {
-     padding: 10px;
+.main{
+   margin-left: 3rem;
+}
+
+/* .wrapper{
+    
 } */
 
-.wrapper {
+.main-content{
     max-inline-size: 902px;
-   /* block-size: 100px;*/
-   /*max-width: 902px;*/
     margin: auto;
-}
-
-.main-content {
     padding-inline: 16px;
-    /* background: blue; */
 }
 
-/* .slider {
+/* .slider{
 
 } */
 
-.slider-container {
-    /* block-size: 100px; */
+.slider-container{
     display: block;
     overflow: auto;
     scroll-behavior: smooth;
     white-space: nowrap;
-    font-size: 0;
 }
 
-.video {
+.video{
     margin: 0;
     display: inline-block;
     width: 100%;
     height: auto;
-    aspect-ratio: 16/9;
-    border-radius: 16px;
+    aspect-ratio: 16/9; /* Que es la proporcion que vienen lo videos */
 }
 
-.slider-bullet-list {
+.slider-bullet-list{
     text-align: center;
-    margin-block-start: 10px;
 }
 
-.slider-bullet {
+.slider-bullet{
     display: inline-block;
     inline-size: 15px;
     block-size: 15px;
-    background: white;
+    background-color: white;
     border-radius: 50%;
+    margin-block: 1rem;
+    margin-inline: 1.5px;
+    font-size: 0;
 }
 
-.form input {
-    inline-size: 100%;
-    border: 1px solid var(--white30);
-    background: #251f24;
+.slider-bullet:hover{
+    background-color: #5551FF;
+}
+
+
+/* Formulario */
+
+/* .form{
+
+} */
+
+.form input{
+    width: 100%;
+    border: 1px solid white;
     box-sizing: border-box;
+    background-color: var(--white30);
     border-radius: 8px;
-    padding-inline: 16px;
-    padding-block: 12px;
-    color: var(--white30);
     font-size: 16px;
+    padding-block: 12px;
+    padding-inline: 16px;
+    color: var(--white30);
     display: block;
     margin-block-end: 24px;
 }
 
-.form input[type="submit"] {
-    background:  #157efb;
+.form input:last-of-type{
+    background-color: #157EFB;
     border: none;
 }
 
-.form input::-webkit-input-placeholder {
-    color:var(--white20)
+.form input::-webkit-input-placeholder{
+    color: var(--white30);
 }
 
+/* .form input:last-of-type:hover{
+    background-color: var(--white10);
+} */
+
+
+/* Responsive design */
+
 @media screen and (min-width: 1366px) {
-    .hero {
-        block-size: 350px;
+    h1{
+        font-size: 6rem;
     }
 
-    .header {
+    .header{
         position: sticky;
-        inset-block-start: -45px;
+        inset-block-start: -35px; 
     }
-
-    .header-content {
-        position: relative;
-        inset-block-start: 65px;
-        padding-inline: 0;
-    }
-    
-    header {
+    .header-content{
         position: absolute;
-        inset-block-start: 0;
-        inset-inline-start: -208px;
+        inset-block-start: 20px;
+        inset-inline-start: calc(100%-50%);
+        margin-inline-start: 30px;
+        margin-block-start: 0px;
+    
+        
+    }
+    header{
+        font-size: 1.4rem;
+        color: var(--gray);
+        position: absolute;
+        /* inset-block-start: 10px; */
+        inset-inline-start: cal(200px);
         inline-size: 188px;
+        
     }
-    h1 {
-        font-size: 60px;
-        margin-block-start: 64px;
-    }
+        
 }
