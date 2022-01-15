@@ -114,7 +114,7 @@ hr{
 }
 
 p{
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     color: var(--white20);
 }
 
@@ -151,7 +151,7 @@ pre{
 }
 
 .section-content h3::before{
-    content: counter(titleList, decimal) "."; 
+    content: counter(titleList, decimal) ". "; 
 
 }
 
@@ -165,7 +165,7 @@ pre{
 }
 
 ::selection{
-    background-color: antiquewhite; /* Cambia el color cuando seleccionamos el texto en el sitio web */
+    background-color: antiquewhite; 
 }
 
 
@@ -251,25 +251,26 @@ blockquote p{
 
 .form input{
     width: 100%;
-    border: 1px solid white;
+    border: 1px solid gray;
     box-sizing: border-box;
     background-color: var(--white30);
     border-radius: 8px;
     font-size: 16px;
     padding-block: 12px;
     padding-inline: 16px;
-    color: var(--white30);
+    color: var(--white10);
     display: block;
     margin-block-end: 24px;
 }
 
-.form input:last-of-type{
+.form input[type="submit"]{
     background-color: #157EFB;
     border: none;
+    color: white;
 }
 
 .form input::-webkit-input-placeholder{
-    color: var(--white30);
+    color: var(--white20);
 }
 
 /* .form input:last-of-type:hover{
